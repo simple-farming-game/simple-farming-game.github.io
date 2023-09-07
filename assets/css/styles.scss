@@ -1,0 +1,119 @@
+---
+---
+
+body {
+	font-family: 'SUIT-Regular';
+	color: white;
+    background-color: rgb(33, 36, 46);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+$basecolor: #6ABE30;
+$subcolor: #8F563B;
+
+a {
+	font-weight: 700;
+	padding: 0 0.5rem;
+	text-decoration: none;
+	color: $basecolor;
+    transition: 100ms;
+}
+
+a:hover{
+    color: $subcolor
+}
+
+@font-face {
+    font-family: 'SUIT-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 5;
+}
+
+.nav {
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    width: 100%;
+    height: 50px;
+    background-color: $basecolor;
+    overflow: hidden; /* 요소 내부 내용물을 숨김 */
+    
+    nav {
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            
+            li {
+                float: left;
+                
+                a {
+                    font-weight: 700;
+                    padding: 0 0.5rem;
+                    text-decoration: none;
+                    color: #fff;
+                    margin: 5px;
+                    line-height: 50px;
+                    text-align: center
+                }
+            }
+        }
+    }
+}
+
+.mainimg{
+    color: #fff;
+    .img{
+        position: relative;
+        height: 260px;
+        overflow: hidden;
+        text-align: center;
+    }
+    .screenimg{
+        position: absolute;
+        text-align: center;
+        -webkit-filter: blur(5px) brightness(60%); 
+        -moz-filter: blur(5px) brightness(60%); 
+        -o-filter: blur(5px) brightness(60%); 
+        -ms-filter: blur(5px) brightness(60%); 
+        filter: blur(5px) brightness(60%);
+        width: 962px;
+        height: 672px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+    .text{
+        position: absolute;
+        top: 90px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        text-align: center;
+    }
+}
+
+#main{
+    position: relative;
+    text-align: center;
+}
+
+pre{
+    white-space: pre-wrap;
+    word-break: break-all;
+    overflow: auto;
+}
+
+.post_text{
+    position: relative;
+    width: 500px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
